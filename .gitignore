@@ -9,6 +9,7 @@
 
 # Cache, session files and logs (Symfony3)
 /var/cache/*
+/var/log/*
 /var/logs/*
 /var/sessions/*
 !var/cache/.gitkeep
@@ -46,3 +47,34 @@
 
 # Embedded web-server pid file
 /.web-server-pid
+
+/.idea/*
+
+/cacert.pem
+
+
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+###< phpunit/phpunit ###
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> symfony/phpunit-bridge ###
+.phpunit
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> symfony/web-server-bundle ###
+/.web-server-pid
+###< symfony/web-server-bundle ###
+
+/composer.lock
+/symfony.lock
